@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja Patel - Full Stack Programmer</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Work">Work</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="Home" class="float-left">
+                <h1>Hi, I'm Pooja.</h1>
+                <p id="style1">Full Stack Programmer</p>
+                <p id="style2">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+            </div>
+            <img class="float-right" src="./assets/image1.jpg" alt="HeadShot of Pooja Patel">
+
+        </section>
+        
+
+        <section class="content">
+            <!-- Search Engine Optimization Image and description -->
+            <div class="content-block" id="search-engine-optimization">
+                <img src="./Develop/images/search-engine-optimization.jpg" id="float-left" alt="search engine optimization"/>
+                <h2>Search Engine Optimization</h2>
+                <p>
+                    The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+                </p>
+            </div>
+            <!-- Online Reputation Management Image and description  -->
+            <div class="content-block" id="online-reputation-management">
+                <img src="./Develop/images/online-reputation-management.jpg" id="float-right" alt="online reputation management" />
+                <h2>Online Reputation Management</h2>
+                <p>
+                    The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+                </p>
+            </div>
+            <!-- Social Media Marketing Image and description -->
+            <div class="content-block" id="social-media-marketing">
+                <img src="./Develop/images/social-media-marketing.jpg" id="float-left" alt="social media marketing" />
+                <h2>Social Media Marketing</h2>
+                <p>
+                    Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+                </p>
+            </div>
+        </section>
+
+
+        <form>
+            <h1>Default Form Styles</h1>
+            <p>
+              Use the Chrome DevTools to inspect the elements. Try to force <code>:focus</code> state on some of them and look for CSS properties like <code>appearance</code>, <code>outline</code>, and <code>cursor</code>.
+            </p>
+            <p>
+              <label for="username">Name:</label>
+              <!-- This element has a CSS declaration of `cursor: text` -->
+              <input id="username" type="text" placeholder="First Last" />
+            </p>
+            <p>
+              <label  for="email">E-mail:</label>
+              <input id="email" type="text" placeholder="me@example.com" />
+            </p>
+            <p>
+              <label for="expertise">CSS level of expertise:</label>
+              <!-- This element has a CSS declaration of `appearance: menulist` -->
+              <select id="expertise">
+                <option>Beginner</option>
+                <option selected>Intermediate</option>
+                <option>Advanced</option>
+              </select>
+            </p>
+            <p>
+              <label for="comment">Comment:</label>
+              <textarea id="comment" placeholder="Great article!"></textarea>
+            </p>
+            <p>
+              <input class="checkbox" id="agreement" type="checkbox" />
+              <label for="agreement">I agree to share my e-mail address with The CSS Blog</label>
+            </p>
+            <p>
+              <!-- When this element is in a :focus state, the CSS `outline` property is applied -->
+              <button>Submit</button>
+            </p>
+          </form>
+    </main>
+</body>
+</html>
