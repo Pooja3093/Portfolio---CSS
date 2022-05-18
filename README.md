@@ -45,4 +45,4 @@ https://pooja3093.github.io/CSSWK2CH1PP/
 https://github.com/Pooja3093/CSSWK2CH1PP.git
 
 ## Deployed application screenshot
-!(
+![screenshot](https://github.com/Pooja3093/CSSWK2CH1PP/blob/main/assets/Images/Pooja%20Patel%20-%20Full%20Stack%20Programmer.jpg)
