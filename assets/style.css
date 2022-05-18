@@ -1,3 +1,5 @@
+/* Global styles */
+
 :root{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --text:#1A132F;
@@ -5,121 +7,160 @@
     --link:#F66B0E;
 }
 
+
+a{
+  color: var(--text);
+  text-decoration: none; 
+}
 a:hover, a:focus{
     color: var(--link);
 }
 
-header {
-    background-image: linear-gradient(#001D6E, var(--background));
-    margin-top: -20px;
-}
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    font-size: large;
-    font-weight: bolder;
+.style1{
+  font-size: 7vh;
 }
-
-nav li{
-    padding: 20px 50px;
+.style2{
+  font-size: 5vh;
 }
-
-nav a{
-    color: var(--background);
-    text-decoration: none;
-}
-div a{
-    color: var(--text); 
-}
-
-body{
-    margin: 0%;
-    background-color: var(--background);
-}
-
-main{
-    /* background-color: var(--background); */
-    font-size: large;
-    color: var(--text);
-    margin-left: 20px;
-    margin-top: 20px;
-    
-}
-
-.about{
-    display: block;
-    margin-bottom: 50px;
-}
-
-#style1{
-    font-size: 25px;
-    display: flex;
-}
-
-#style2{
-    font-size: 15px;
-    display: flex;
-    flex-wrap: wrap;
+.style3{
+  font-size: 2vh;
 }
 
 
 .float-left{
-    float: left;
-    width: 50%;
-    padding: 10px;
+  float: left;
+  width: 50%;
+  padding: 10px;
 }
 
-div.gallery {
-    border: 1px solid var(--link);
-  }
-  
-div.gallery:hover {
-    transform: scale(1.2); 
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-    margin-bottom: 100px;
-  }
-  
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-      margin-bottom: 100px;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+
+/* Removes body margin to avoid white space around the webpage */
+body{
+  margin: 0%;
+  background-color: var(--background);
+}
+
+/* Header style along with list and list items */
+header {
+      background-image: linear-gradient(#001D6E, var(--background));
+      margin-top: -25px;
   }
 
+      nav ul {
+          display: flex;
+          justify-content: space-evenly;
+          list-style-type: none;
+          font-size: x-large;
+          font-weight: bolder;
+          
+      }
+
+      nav li{
+          padding: 20px 50px;
+          
+      }
+
+      nav a{
+        color: var(--background);
+      }
+
+
+  main{
+      color: var(--text);
+      margin-left: 20px;
+      margin-top: 2vh;
+      
+  }
+
+      .about{
+          height:50vh;
+          display: flex;
+      }
+
+      .about > img{
+        margin-top: 10vh;
+        margin-left: 20vh;
+        width: 70vh;
+        height: 50vh;
+      }
+      
+      #Work{
+        margin-top: 15vh;
+      }
+
+      .responsive{
+        
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .container {
+        display: flex;
+        width: 100%;
+        padding: 4% 2%;
+        box-sizing: border-box;
+        height: 100vh;
+      }
+      
+      .card {
+        flex: 1 1;
+        overflow: hidden;
+        transition: .5s;
+        margin: 0 2%;
+        box-shadow: 0 20px 30px rgba(0,0,0,.5);
+        line-height: 0;
+      
+      }
+      
+      .card img {
+        width: 200%;
+        height: calc(100% - 10vh);
+        object-fit: cover; 
+        transition: .5s;
+      }
+      
+      .card span {
+        font-size: 2.5vh;
+        display: block;
+        text-align: center;
+        line-height: 2;
+      }
+      
+      .card:hover { flex: 1 1 25%; }
+ 
+/*To make webpage responsive to screen size  */
+@media screen and (max-width: 720px) {
+  .responsive {
+    margin: 10px; 
+  }
+  
+  .about{
+    margin: 10px;
+    height: fit-content;
+  }
+  nav ul{
+    flex-direction: column;
+  }
+}
+  
+@media screen and (max-width: 420px) {
+  .responsive {
+    margin: 10px; 
+  }
+  .container{
+    width: 200%;
+    flex-wrap: wrap;
+  }
+  .about{
+    margin: 20vh 10px;
+    height: fit-content;
+  }
+  nav ul{
+    flex-direction: column;
+  }
+}
+
+/* To style the form */
 form {
     max-width: 400px;
     margin: auto;
@@ -187,3 +228,14 @@ form {
     margin-right: 2%;
   }
   
+
+  /* Footer Style */
+  footer {
+    background-image: linear-gradient(var(--background), #001D6E);
+    margin-bottom: -20px;
+    font-size: large;
+    color: var(--background);
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}

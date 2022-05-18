@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+      <!-- Navigation bar with links -->
         <nav>
             <ul>
                 <li><a href="#Home">Home</a></li>
@@ -20,61 +21,56 @@
     </header>
 
     <main>
-        <section class="about">
-            <div id="Home" class="float-left">
-                <h1>Hi, I'm Pooja.</h1>
-                <p id="style1">Full Stack Programmer</p>
-                <p id="style2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="#Contact">Lets talk!</a>
-              </div>
-            <img src="./assets/image1.jpg" alt="HeadShot of Pooja Patel">
-
+        <!-- About section: contains brief description about me and image -->
+        <section class="about" id="Home">
+            <div class="float-left">
+                <p class="style1">Hi, I'm Pooja.</p>
+                <p class="style2">Full Stack Programmer</p>
+                <p class="style3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#Contact" style="text-decoration:underline ;">Let's talk!</a>
+            </div>
+            <img src="./assets/Images/image1.jpg" alt="HeadShot of Pooja Patel">
+          
         </section>
         
+        <!-- Work section: contains titled images of projects which are linked to their deployed page -->
         <section id="Work">
-          <h1>My Works</h1>
+          <p class="style2">My Works</p>
+          <hr size="2" color="#001D6E">
         
-          <div class="responsive">
-            <div class="gallery">
+          <div class="container" class="responsive">
+            <div class="card">
               <a target="_blank" href="https://pooja3093.github.io/HTMLWK1CH1PP/">
-                <img src="https://via.placeholder.com/500" alt="Project 1" width="600" height="400">
+                <img src="./assets/Images/Project 1.png">
+                <span>Project 1</span>
               </a>
-              <div class="desc">Project 1</div>
+            </div>
+            <div class="card">
+              <a target="_blank" href="https://pooja3093.github.io/HTMLWK1CH1PP/">
+                <img src="./assets/Images/Project 2.png">
+                <span>Project 2</span>
+              </a>
+            </div>
+            <div class="card">
+              <a target="_blank" href="https://pooja3093.github.io/HTMLWK1CH1PP/">
+                <img src="./assets/Images/Project 3.jpg">
+                <span>Project 3</span>
+              </a>
+            </div>
+            <div class="card">
+              <a target="_blank" href="https://pooja3093.github.io/HTMLWK1CH1PP/">
+                <img src="./assets/Images/Project 4.jpg">
+                <span>Project 4</span>
+              </a>
             </div>
           </div>
-          
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="https://pooja3093.github.io/HTMLWK1CH1PP/">
-                <img src="https://via.placeholder.com/500" alt="Project 2" width="600" height="400">
-              </a>
-              <div class="desc">Project 2</div>
-            </div>
-          </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="https://pooja3093.github.io/HTMLWK1CH1PP/">
-                <img src="https://via.placeholder.com/500" alt="Project 3" width="600" height="400">
-              </a>
-              <div class="desc">Project 3</div>
-            </div>
-          </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="https://pooja3093.github.io/HTMLWK1CH1PP/">
-                <img src="https://via.placeholder.com/500" alt="Project 4" width="600" height="400">
-              </a>
-              <div class="desc">Project 4</div>
-            </div>
-          </div>
-      </section>
+       </section>
 
-
+      
+       <!-- Contact section: contains form to contact me -->
         <form id="Contact">
-          <h3>Lets talk!</h3>
+          <p class="style2">Let's talk!</p>
+          <hr size="2" color="#001D6E">
           <p>
             <label for="name">Name:</label>
             <input class="text-input" id="username" type="text" placeholder="First Last" />
@@ -96,5 +92,10 @@
           </p>
         </form>
     </main>
+
+    <!-- Footer section -->
+    <footer>
+      <p>Created by Pooja Patel 2022.</p>
+    </footer>
 </body>
 </html>
