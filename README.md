@@ -1,7 +1,4 @@
-## CSSWK2CH1PP
-# Week 2 challenge: Advanced CSS
-
-## Employee Portfolio
+# Employee Portfolio
 
 In this challenge I have applied the Advanced CSS coding taught to me in class, which includes:
 
