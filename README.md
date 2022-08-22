@@ -1,4 +1,4 @@
-# Employee Portfolio
+# Portfolio - CSS
 
 In this challenge I have applied the Advanced CSS coding taught to me in class, which includes:
 
